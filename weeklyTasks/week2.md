@@ -2,17 +2,17 @@
 
 ---
 
-### **Step 1.1: Data Cleaning**
+### **Step 1.1: Data Cleaning** - GM
    - **Objective**: Ensure data consistency and readability.
    - **Sub-Steps**:
-     - **Remove Duplicates**: Identify and remove duplicate recipes.
-     - **Normalize Text**: Standardize ingredient names (e.g., “bell pepper” vs. “capsicum”) and steps.
+     - **Remove Duplicates**: Identify and remove duplicate recipes, also only include where the source = "Gathered"
+     - **Normalize Text**: Standardize ingredient names (e.g., “bell pepper” vs. “capsicum”) and steps. 
      - **Spell-Check and Correct Typos**: Use NLP tools like `nltk` to identify and correct common misspellings.
      - **Standardize Units**: Convert measurements to a consistent format (e.g., grams, tablespoons) using libraries like `quantulum3`.
 
 ---
 
-### **Step 1.2: Tokenize Ingredients and Steps**
+### **Step 1.2: Tokenize Ingredients and Steps** - RM
    - **Objective**: Break down ingredients and steps into tokens (individual elements).
    - **Sub-Steps**:
      - **Ingredients Tokenization**:
@@ -24,7 +24,7 @@
 
 ---
 
-### **Step 1.3: Assign States to Ingredients and Steps**
+### **Step 1.3: Assign States to Ingredients and Steps** - RM/MZ
    - **Objective**: Define the unique states required for Markov Chain modeling.
    - **Sub-Steps**:
      - **Ingredient States**: Assign each unique ingredient a state ID.
@@ -33,7 +33,7 @@
 
 ---
 
-### **Step 1.4: Annotate Data with Cuisines and Dietary Tags**
+### **Step 1.4: Annotate Data with Cuisines and Dietary Tags** - MZ
    - **Objective**: Tag each recipe with cuisine and dietary information for better personalization.
    - **Methods**:
      - **Automated Tagging**: Use text analysis to tag recipes based on keywords (e.g., “spaghetti” for Italian cuisine).
@@ -41,7 +41,7 @@
 
 ---
 
-### **Step 1.5: Structure Data in a DataFrame**
+### **Step 1.5: Structure Data in a DataFrame** - MZ
 **DataFrame Structure**: Use a `pandas` DataFrame for in-memory data handling, with columns such as `recipe_id`, `ingredient`, `quantity`, `unit`, `step`, `cuisine`, `nutrition`, and `tags`.
 
 ---
