@@ -1,4 +1,4 @@
-### **2.1: Define States** -- RM
+### **2.1: Define States**
    - **Objective**: Identify and enumerate all unique states in the dataset, which include ingredients and cooking steps.
    - **Sub-Steps**:
      - **2.1.1: Extract Unique Ingredients**:
